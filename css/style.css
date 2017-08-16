@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 700px;
+	margin: 20px auto;
+}
+.film{
+	float: left;
+	padding: 5px;
+}
