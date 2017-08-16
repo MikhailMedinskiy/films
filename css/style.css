@@ -8,6 +8,14 @@
 	margin: 20px auto;
 }
 .film{
-	float: left;
+	display: inline-block;
 	padding: 5px;
+}
+
+.btns {
+	text-align: center;
+}
+.btns button{
+	padding: 10px 25px;
+	min-width: 100px;
 }

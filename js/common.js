@@ -3,8 +3,16 @@
     $(document).ready(function () {
 
     	$("[data-fancybox]").fancybox({
-			loop : true
+			loop : true,
+            toolbar  : false
 		});
+
+       var $films = $('.films').isotope();
+
+       $('.btns').on( 'click', 'button', function() {
+          var filterValue = $(this).attr('data-filter');
+          $films.isotope({ filter: filterValue });
+        });
 
 
     });
