@@ -1,11 +1,15 @@
 ;(function ($) {
     // Scripts that will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
     $(document).ready(function () {
+    });
 
-    	$("[data-fancybox]").fancybox({
-			loop : true,
+    // Scripts that will run after the whole page is loaded (images, videos, iframes. etc)
+    $(window).on('load', function () {
+
+      $("[data-fancybox]").fancybox({
+      loop : true,
             toolbar  : false
-		});
+      });
 
        var $films = $('.films').isotope();
 
@@ -13,12 +17,6 @@
           var filterValue = $(this).attr('data-filter');
           $films.isotope({ filter: filterValue });
         });
-
-
-    });
-
-    // Scripts that will run after the whole page is loaded (images, videos, iframes. etc)
-    $(window).on('load', function () {
 
     });
 
